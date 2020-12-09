@@ -6,6 +6,8 @@ const bands = data.map((item, index) => {
         origin: item.origin,
         fans: item.fans,
         formed: item.formed,
+        "split": item.split,
+        "style": item.style,
     }
 })
 

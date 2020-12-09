@@ -29,7 +29,7 @@ function App() {
           })}
           tabBarOptions={{
             activeTintColor: "red",
-            inactiveTintColor: "#CC8B86",
+            inactiveTintColor: "white",
               style: {
                 backgroundColor: "#000",
               }

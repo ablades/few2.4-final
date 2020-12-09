@@ -12,6 +12,12 @@ function Item({ band }) {
 	)
 }
 
+function separator() {
+  return (
+    <View style={styles.separator} />
+  )
+}
+
 export default function Band() {
   return (
     <SafeAreaView style={styles.container}>
@@ -22,6 +28,7 @@ export default function Band() {
           }}
           keyExtractor={item => item.name}
           style={styles.listContainer}
+          ItemSeparatorComponent={separator}
         />
     </SafeAreaView>
   )
@@ -53,5 +60,9 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
+  },
+  separator: {
+    borderBottomColor: "white",
+    borderBottomWidth: 1
   }
   });
